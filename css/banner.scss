@@ -1,0 +1,107 @@
+.banner {
+  margin-top: 40px;
+  padding: 0 5%;
+  box-sizing: border-box;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      position: relative;
+      height: 500px;
+      font-family: 'Nunito Sans', sans-serif;
+      & .banner-shadow {
+        position: absolute;
+        width: 500px;
+        height: 1233.79px;
+        left: -280px;
+        top: -1000px;
+        background: linear-gradient(180deg, rgba(251, 168, 28, 0.16) 0%, rgba(84, 84, 212, 0.336) 100%);
+        filter: blur(150px);
+        border-radius: 233.5px;
+        transform: rotate(-28.02deg);
+      }
+      & .banner-title {
+        margin-bottom: 3%;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 84px;
+        color: #FFF;
+        & span {
+          color: #FE9701;
+        }
+      }
+      & .banner-description {
+        width: 420px;
+        height: 80px;
+        font-size: 21px;
+        line-height: 39px;
+        letter-spacing: -0.656526px;
+        color: #F69306;
+        & span {
+          color: rgba(255,255,255,0.7);
+        }
+      }
+      & .banner-btn {
+        margin-top: 70px;
+        & a {
+          padding: 22px 40px;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 27px;
+          background: #F69306;
+          border-radius: 4px;
+        }
+      }
+      & .icon-goMarket {
+        z-index: -2;
+        position: absolute;
+        left: 140px;
+        bottom: 20px;
+        animation: spin infinite 10s linear ;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    & .btn-arrow {
+      width: 12px;
+      height: 12px;
+    }
+    & .icon-goMarket {
+      width: 146px;
+      height: 145px;
+    }
+
+
+    &-image {
+      box-sizing: border-box;
+      //border: 1px solid blue;
+      width: 100%;
+      position: relative;
+      & .double-triangle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      & .double-circle {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      & .double-square {
+        position: absolute;
+        width: 560px;
+        right: -2vw;
+      }
+
+    }
+  }
+}
